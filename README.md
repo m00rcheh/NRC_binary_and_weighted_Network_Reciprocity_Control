@@ -18,6 +18,8 @@ These approaches are valuable for systematically exploring the relationship betw
 - **Scalability**: Demonstrates performance on large-scale networks, ensuring computational efficiency.
 - **Case Study**: Analyzes graded reciprocity's role in a memory task using a reservoir computing framework.
 
+![Network Representations](networks.png)
+
 ## Installation
 
 To run the NRC algorithms, clone this repository and install the required dependencies.
