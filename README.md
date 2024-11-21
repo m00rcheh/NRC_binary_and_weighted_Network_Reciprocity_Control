@@ -104,7 +104,7 @@ reciprocity = utils.compute_reciprocity_weighted(W)
 print(f"Reciprocity: {reciprocity}")
 ```
 ## Benchmark Network Data:
-[This Link](https://www.openai.com) includes synthetic networks used in this study plus their adjusted reciprocity. 
+[This Link](https://drive.google.com/drive/folders/1waakirfxdCtAQBhSoFbgi_WBuw-6Ms1p?usp=drive_link) includes synthetic networks used in this study plus their adjusted reciprocity. 
 synthetic_mats.npy includes 50 trials of networks with random, small-world, and modular structure with 256 nodes. 
 The data shape follows (num_nodes, num_nodes, n_trials, profile) where profile = [0, 1, 2] for [random, small-world, modular]
 
