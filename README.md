@@ -1,5 +1,5 @@
 
-# NRC_binary_and_weighted_Network_Reciprocity_Control
+# NRC binary and weighted Network Reciprocity Control
 
 This repository contains the source code for implementing the Network Reciprocity Control (NRC) algorithms, as introduced in the accompanying manuscript. The NRC algorithms allow for controlling the degree of asymmetry and reciprocity in both binary and weighted networks while preserving key network properties.
 
@@ -30,7 +30,7 @@ cd nrc-algorithms
 Ensure that you have Python 3.x and the following libraries installed:
 pip install -r requirements.txt
 
-
+Note that the plots were made by an in-house python package called `pyvizman`, which you can install using the command `pip install vizman==0.2.0`. This library is not included in the requirements file since it is not essential for the algorithm.
 
 ## Usage
 The `utils` script contains functions for adjusting and computing reciprocity in binary networks. Below are the main functions and how to use them:
