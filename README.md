@@ -43,29 +43,30 @@ To adjust the reciprocity in a binary network, use the `adjust_reciprocity_binar
 
    ```python
    import utils
+   import numpy as np
 
-   # Example binary network adjacency matrix W
-   W = [[0, 1, 0],
-        [1, 0, 1],
-        [0, 1, 0]]
+   # Example binary network adjacency matrix 
+   matrix = np.random.rand(64, 64)
+   thresholded_matrix = (matrix > np.percentile(matrix, 90)).astype(int)
    
    # Set the desired reciprocity value
    desired_reciprocity = 0.5
 
    # Adjust reciprocity in the binary network
-   W_adjusted = utils.adjust_reciprocity_binary(W, desired_reciprocity)
+   W_adjusted = utils.adjust_reciprocity_binary(thresholded_matrix, desired_reciprocity)
    ```
 
 To compute the reciprocity of a binary network, use the compute_reciprocity_binary function from the utils module. This function takes the adjacency matrix W as input and returns the computed reciprocity value.
 
 ```python
    import utils
+   import numpy as np
 
-    W = [[0, 1, 0],
-        [1, 0, 1],
-        [0, 1, 0]]
+   # Example binary network adjacency matrix 
+   matrix = np.random.rand(64, 64)
+   thresholded_matrix = (matrix > np.percentile(matrix, 90)).astype(int)
 
-  reciprocity = utils.compute_reciprocity_binary(W)
+  reciprocity = utils.compute_reciprocity_binary(thresholded_matrix)
   print(f"Reciprocity: {reciprocity}")
 ```
 
@@ -77,30 +78,28 @@ To adjust the reciprocity in a weighted network, use the `adjust_reciprocity_wei
 
    ```python
    import utils
+   import numpy as np
 
-   # Example weighted network adjacency matrix W
-   W = [[0, 0.2, 0],
-        [0.1, 0, 0.5],
-        [0, 0.3, 0]]
+  # Example binary network adjacency matrix W
+   matrix = np.random.rand(64, 64)
    
    # Set the desired reciprocity value
-   desired_reciprocity = 0.5
+   desired_reciprocity = 0.3
 
    # Adjust reciprocity in the weighted network
-   W_adjusted = utils.adjust_reciprocity_weighted(W, desired_reciprocity)
+   W_adjusted = utils.adjust_reciprocity_weighted(matrix, desired_reciprocity)
 ```
 
 To compute the weighted reciprocity of a network, use the compute_reciprocity_weighted function from the utils module. This function takes the adjacency matrix W as input and returns the computed reciprocity value.
 
 ```python
    import utils
+   import numpy as np
 
-   # Example weighted network adjacency matrix W
-   W = [[0, 0.1, 0.25],
-        [0.3, 0, 0.8],
-        [0.03, 0.5, 0]]
+   # Example binary network adjacency matrix
+   matrix = np.random.rand(64, 64)
 
-reciprocity = utils.compute_reciprocity_weighted(W)
+reciprocity = utils.compute_reciprocity_weighted(matrix)
 print(f"Reciprocity: {reciprocity}")
 ```
 ## Benchmark Network Data:
