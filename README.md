@@ -120,9 +120,6 @@ Contributions are welcome! If you find bugs, suggest improvements, or want to co
 ## Citation
 If you use these algorithms in your research, please cite the corresponding manuscript:
 
-Authors: Fatemeh Hadaegh, Kayson Fakhar, Claus C. Hilgetag
-
-Title: Controlling Reciprocity in Binary and Weighted Networks: A Novel Density-Conserving Approach
-
-DOI: 
+Hadaeghi, Fatemeh, Kayson Fakhar, and Claus Christian Hilgetag. "Controlling Reciprocity in Binary and Weighted Networks: A Novel Density-Conserving Approach." bioRxiv (2024).
+link: https://www.biorxiv.org/content/10.1101/2024.11.24.625064v1
 
